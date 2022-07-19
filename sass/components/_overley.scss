@@ -1,0 +1,30 @@
+.overley {
+  position: relative;
+  overflow: hidden;
+
+&__text {
+    @include paddings(63px, 24px, 63px, 24px);
+     @include fonts(null, 18px, 1.56);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+    width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  overflow: auto;
+  transition: opacity var(--animation-fast), transform var(--animation-fast);
+  opacity: 0;
+
+    color: var(--bgc-color);
+  background: var(--description-color);
+}
+}
+
+.card__link:hover .overley__text,
+.card__link:focus .overley__text {
+  transform: translateY(0);
+  opacity: 1;
+  overflow: visible;
+}

@@ -1,0 +1,61 @@
+.auth-nav {
+  display: flex;
+
+&__item {
+  transition: color var(--animation-fast);
+}
+
+&__item:first-child {
+  margin-right: 50px;
+}
+
+&__link {
+  @include fonts(500, null, null, 0.02em);
+  @include paddings(32px, null, 32px, null);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    transition: color var(--animation-fast);
+
+  color: var(--primery-text-color);
+  }
+
+
+&__item:hover,
+&__item:focus,
+&__link:hover,
+&__link:focus {
+  color: var(--accent-text-color);
+}
+
+&__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+}
+
+.contact {
+
+  @include fonts(null, null, 1.71, null);
+  color: var(--bgc-color);
+    text-decoration: none;
+    transition: color var(--animation-fast);
+    
+    &__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+&__link {
+
+  @include fonts(null, null, 1.71, null);
+  color: var(--mail-color);
+    text-decoration: none;
+  transition: color var(--animation-fast);
+}
+
+&__link--active:hover,
+&__link--active:focus {
+  color: var(--accent-text-color);
+}
+}

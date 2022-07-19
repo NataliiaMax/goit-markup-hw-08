@@ -1,0 +1,58 @@
+.form-container {
+  width: 570px;
+}
+
+.form-field {
+  display: flex;
+
+&__input-mail {
+  display: flex;
+  align-items: center;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--background-color);
+  color: var(--bgc-color);
+  transition: backdrop-color var(--animation-fast);
+  outline: transparent;
+}
+
+&__input-mail:focus {
+  border-color: var(--accent-text-color);
+
+}
+
+&__input-mail:focus &__input-mail::placeholder {
+  color: var(--accent-text-color);
+  transform: translateY(-100%) scale(0.6);
+}
+
+&__input-mail::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--mail-color);
+}
+
+&__btn {
+
+    @extend %button;
+
+    @include fonts(null, 16px, 1.88,0.06em);
+
+    width: 200px;
+  height: 50px;
+    background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+    transition: transform var(--animation-fast);
+        color: var(--bgc-color);
+}
+
+&__text-btn {
+  margin-right: 10px;
+}
+}

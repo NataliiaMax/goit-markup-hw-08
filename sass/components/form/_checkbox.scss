@@ -1,0 +1,47 @@
+.checkbox {
+  margin-bottom: 30px;
+
+&__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+&__input:checked+&__custom {
+  background-color: var(--accent-text-color);
+  outline-color: var(--accent-text-color);
+}
+
+&__input:focus+&__custom {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+&__custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  outline: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  transition: outline-color var(--animation-fast), background-color var(--animation-fast);
+}
+
+&__icon {
+  fill: var(--bgc-color);
+}
+
+&__text {
+
+  @include fonts (null, null, 1.71, null);
+
+  color: var(--primery-text-color);
+  user-select: none;
+}
+
+&__link {
+  color: var(--accent-text-color);
+  transition: transform var(--animation-fast);
+}
+}

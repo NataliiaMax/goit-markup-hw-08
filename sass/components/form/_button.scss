@@ -1,0 +1,23 @@
+.form-button {
+
+    @extend %button;
+    @include fonts(null, 16px, 1.88, 0.06em);
+
+   width: 200px;
+  height: 50px;
+  margin: auto;
+  border: none;
+  transition: color var(--animation-fast),
+    background-color(--animation-fast);
+
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+    color: var(--bgc-color);
+
+&:hover,
+&:focus {
+  color: var(--button-color);
+  background-color: var(--button-color);
+}
+}

@@ -1,0 +1,38 @@
+.about {
+  @extend %section;
+
+  padding-top: 0;
+  --items: 3;
+
+  &__wrapper {
+    @extend %container;
+  }
+
+  &__title {
+    @extend %section-title;
+  }
+
+  &__container {
+    position: relative;
+    padding: 0;
+  }
+
+  &__subtitle-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    background: var(--card-title-color);
+    width: 100%;
+    height: 70px;
+  }
+
+  &__subtitle {
+
+ @extend %title;
+
+    color: var(--bgc-color);
+  }
+}

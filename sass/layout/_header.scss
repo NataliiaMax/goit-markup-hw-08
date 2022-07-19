@@ -1,0 +1,25 @@
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+ .header__container {
+
+    @extend %container;
+
+    display: flex;
+    align-items:center;
+  }
+
+  .nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+
+  &__link {
+  margin-right: 92px;
+}
+}
+
+
+
+

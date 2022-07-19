@@ -1,0 +1,43 @@
+.content {
+  @extend %section;
+
+  background-color: var(--content-color);
+
+  &__wrapper {
+    @extend %container;
+  }
+
+  &__caption {
+    @extend %section-title;
+  }
+
+  &__item {
+    background: var(--bgc-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+  }
+
+  &__team {
+    @include paddings(30px, null, 30px, null);
+  }
+
+  &__title{
+    @include fonts(500, 16px, 1.19);
+
+    margin-bottom: 10px;
+
+  color: var(--title-text-color);
+    text-align: center;
+  }
+
+  &__text{
+    @include fonts(null, 16px, 1.19);
+
+    margin-bottom: 16px;
+
+   text-align: center;
+  }
+
+
+}
