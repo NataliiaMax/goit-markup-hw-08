@@ -2,31 +2,34 @@
 
   @include paddings(60px,null,60px,null);
 
-  background-color: var(--background-color);
+   background-color: var(--background-color);
+
+    @media screen and (min-width: 1200px){
+      display: flex;
+    }
 
   &__container{
 
-    @extend %container;
-
-     display: flex;
-  align-items: baseline;
+    @extend %container;   
   }
 
+footer__wrapper
   &__link {
-  display: flex;
-  align-items: center;
+  display: block;
   margin-right: 0;
   margin-bottom: 20px;
 }
 }
 
 .adress-container {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  // margin-right: 70px;
 }
 
 .page {
-  width: 206px;
-  margin-right: 93px;
+  // width: 206px;
+  margin-bottom: 60px;
+  // margin-right: 93px;
 
 &__title {
 

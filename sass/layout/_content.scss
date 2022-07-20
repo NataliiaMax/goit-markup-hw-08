@@ -11,11 +11,29 @@
     @extend %section-title;
   }
 
+  &__list{
+    --items: 1;
+    // height: 622px;
+	
+	@media screen and (min-width: 768px) {
+		 --items: 2;
+    //  height: 536px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		 --items: 4;
+	}
+  }
+
   &__item {
-    background: var(--bgc-color);
+        background: var(--bgc-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 4px 4px;
+  }
+
+  &__img{
+    width: 100%;
   }
 
   &__team {
@@ -38,6 +56,4 @@
 
    text-align: center;
   }
-
-
 }

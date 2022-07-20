@@ -7,24 +7,29 @@
 
   &__title {
     @extend %section-title;
+
   }
 
   &__list {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+		 --items: 2;
+	
+	@media screen and (min-width: 768px) {
+		 --items: 3;
+	}
+
+	@media screen and (min-width: 1200px) {
+		 --items: 6;
+	}
   }
 
   &__item {
-    width: 170px;
-    height: 92px;
+        height: 92px;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  &__link {
+    &__link {
     display: flex;
     justify-content: center;
     align-items: center;
