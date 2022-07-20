@@ -1,45 +1,72 @@
-  .about {
+  
+  @media screen and (min-width: 480px){
+  .about {visibility: hidden;
+      display: none;}}
 
-    @extend %section;
+    @media screen and (min-width: 768px){
+  .about {visibility: hidden;
+      display: none;}}
+    
+    @media screen and (min-width: 1200px){
+      .about {@extend %section;
 
     padding-top: 0;
     --items: 3;
+    }}
+   
+
+    @media screen and (min-width: 480px){
+  .about__wrapper {visibility: hidden;
+      display: none;}}
+
+    @media screen and (min-width: 768px){
+  .about__wrapper {visibility: hidden;
+      display: none;}}
     
     @media screen and (min-width: 1200px){
-      visibility: hidden;
-      display: none;
-    }
+      .about__wrapper {
+@extend %container;
+       }}
    
-  &__wrapper {
-    @extend %container;
+     
+ @media screen and (min-width: 480px){
+  .about__title {visibility: hidden;
+      display: none;}}
 
-   @media screen and (min-width: 1200px){
-      visibility: hidden;
-      display: none;
-    }}
+    @media screen and (min-width: 768px){
+  .about__title {visibility: hidden;
+      display: none;}}
+    
+    @media screen and (min-width: 1200px){
+      .about__title {
+@extend %section-title;
+       }}
+       
+    @media screen and (min-width: 480px){
+  .about__container {visibility: hidden;
+      display: none;}}
 
-
-  &__title {
-    @extend %section-title;
-
-     @media screen and (min-width: 1200px){
-      visibility: hidden;
-      display: none;
-    }
-  }
-
-  &__container {
-    position: relative;
+    @media screen and (min-width: 768px){
+  .about__container {visibility: hidden;
+      display: none;}}
+    
+    @media screen and (min-width: 1200px){
+      .about__container {
+position: relative;
     padding: 0;
+       }}
 
-     @media screen and (min-width: 1200px){
-      visibility: hidden;
-      display: none;
-    }
-  }
+      @media screen and (min-width: 480px){
+  .about__subtitle-container {visibility: hidden;
+      display: none;}}
 
-&__subtitle-container {
-    position: absolute;
+    @media screen and (min-width: 768px){
+  .about__subtitle-container {visibility: hidden;
+      display: none;}}
+    
+    @media screen and (min-width: 1200px){
+      .about__subtitle-container {
+   position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,21 +75,21 @@
     background: var(--card-title-color);
     width: 100%;
     height: 70px;
+       }}
 
-     @media screen and (min-width: 1200px){
-      visibility: hidden;
-      display: none;
-    }
-  }
+  @media screen and (min-width: 480px){
+  .about__subtitle {visibility: hidden;
+      display: none;}}
 
-&__subtitle {
-    @extend %title;
+    @media screen and (min-width: 768px){
+  .about__subtitle {visibility: hidden;
+      display: none;}}
+    
+    @media screen and (min-width: 1200px){
+      .about__subtitle {
+ @extend %title;
 
     color: var(--bgc-color);
+       }}
 
-     @media screen and (min-width: 1200px){
-      visibility: hidden;
-      display: none;
-    }
-  }
-}
+

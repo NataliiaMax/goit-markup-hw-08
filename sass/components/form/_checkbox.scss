@@ -34,14 +34,17 @@
 
 &__text {
 
-  @include fonts (null, null, 1.71, null);
+  @include fonts (null, 12px, 1.17, null);
 
   color: var(--primery-text-color);
   user-select: none;
+
+  @media screen and (min-width: 1200px){
+    @include fonts (null, null, 1.71, null);
 }
 
 &__link {
   color: var(--accent-text-color);
   transition: transform var(--animation-fast);
 }
-}
+}}
