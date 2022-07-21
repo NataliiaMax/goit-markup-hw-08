@@ -1,7 +1,14 @@
 .portfolio {
 @extend %section;
 
-  --items: 3;
+      --items: 1;
+
+      @media screen and (min-width: 768px) {
+				 --items: 2;}
+         
+	@media screen and (min-width: 1200px) {
+		 --items: 3;
+	}
 
   &__container{
     @extend %container;
@@ -19,7 +26,7 @@
 }
 
 &__title { 
-  @include fonts(null, 18px, 2, 0.06em);
+  @include fonts(700, 18px, 2, 0.06em);
 
   margin-bottom: 4px;
 

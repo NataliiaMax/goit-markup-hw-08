@@ -2,22 +2,30 @@
 
     @extend %section;
 
-   @include paddings (200px, null, 200px, null);
+       @include paddings (118px, null, 118px, null);
    
   text-align: center;
-
- 
-
-  max-width: 1600px;
-  height: 600px;
-  margin: 0 auto;
+   max-width: 480px;
+  height: 400px;
+    margin: 0 auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/image-hero/img-hero.jpg);
+    url(../images/image-hero/img-hero.jpg);
      background-color: var(--background-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
+   @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+    @media screen and (min-width: 1200px) {
+
+   @include paddings (200px, null, 200px, null);
+ 
+   max-width: 1600px;
+  height: 600px;}
+ 
 &__container{
 
     @extend %container;
@@ -26,17 +34,23 @@
 
 &__caption {
 
-    @include fonts(null, 44px, 1.36, 0.06em);
+     @include fonts(null, 26px, 1.62, 0.06em);
 
-  margin-bottom: 35px;
+     width: 360px;
+margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
-
-  color: var(--bgc-color);
+ color: var(--bgc-color);
     text-align: center;
     text-transform: uppercase;
-}
+
+     @media screen and (min-width: 1200px) {
+
+    @include fonts(null, 44px, 1.36, 0.06em);
+  
+  width: 696px;
+  margin-bottom: 35px;
+}}
 
 &__button {
 

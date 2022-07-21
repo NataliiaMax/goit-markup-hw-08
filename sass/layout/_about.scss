@@ -1,95 +1,88 @@
-  
-  @media screen and (min-width: 480px){
-  .about {visibility: hidden;
-      display: none;}}
+.about {
+  visibility: hidden;
+  display: none;
 
-    @media screen and (min-width: 768px){
-  .about {visibility: hidden;
-      display: none;}}
-    
-    @media screen and (min-width: 1200px){
-      .about {@extend %section;
+  @media screen and (min-width: 1200px) {
+    @include paddings(94px, null, 94px, null);
 
+
+  visibility:visible;
+  display:flex;
     padding-top: 0;
     --items: 3;
-    }}
-   
+  }
 
-    @media screen and (min-width: 480px){
-  .about__wrapper {visibility: hidden;
-      display: none;}}
+  &__wrapper {
+    visibility: hidden;
+    display: none;
 
-    @media screen and (min-width: 768px){
-  .about__wrapper {visibility: hidden;
-      display: none;}}
-    
-    @media screen and (min-width: 1200px){
-      .about__wrapper {
-@extend %container;
-       }}
-   
-     
- @media screen and (min-width: 480px){
-  .about__title {visibility: hidden;
-      display: none;}}
+    @media screen and (min-width: 1200px) {
+      @include paddings(null, 15px, null, 15px);
 
-    @media screen and (min-width: 768px){
-  .about__title {visibility: hidden;
-      display: none;}}
-    
-    @media screen and (min-width: 1200px){
-      .about__title {
-@extend %section-title;
-       }}
-       
-    @media screen and (min-width: 480px){
-  .about__container {visibility: hidden;
-      display: none;}}
+      display: block;
+      visibility:visible;
+        width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
+    }
+  }
 
-    @media screen and (min-width: 768px){
-  .about__container {visibility: hidden;
-      display: none;}}
-    
-    @media screen and (min-width: 1200px){
-      .about__container {
-position: relative;
-    padding: 0;
-       }}
+  &__title {
+    visibility: hidden;
+    display: none;
 
-      @media screen and (min-width: 480px){
-  .about__subtitle-container {visibility: hidden;
-      display: none;}}
+    @media screen and (min-width: 1200px) {
 
-    @media screen and (min-width: 768px){
-  .about__subtitle-container {visibility: hidden;
-      display: none;}}
-    
-    @media screen and (min-width: 1200px){
-      .about__subtitle-container {
-   position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    bottom: 0;
-    background: var(--card-title-color);
-    width: 100%;
-    height: 70px;
-       }}
+   @include fonts(null, 36px, 1.17);   
+    color: var(--title-text-color);
+                text-align: center;
+                           margin-bottom: 50px;
+            visibility:visible;
+            display: block;
+    }
+  }
 
-  @media screen and (min-width: 480px){
-  .about__subtitle {visibility: hidden;
-      display: none;}}
+  &__container {
+    visibility: hidden;
+    display: none;
 
-    @media screen and (min-width: 768px){
-  .about__subtitle {visibility: hidden;
-      display: none;}}
-    
-    @media screen and (min-width: 1200px){
-      .about__subtitle {
- @extend %title;
+    @media screen and (min-width: 1200px) {
+      position: relative;
+      padding: 0;
+      visibility:visible;
+  display:flex;
+    }
+  }
 
-    color: var(--bgc-color);
-       }}
+  &__subtitle-container {
+    visibility: hidden;
+    display: none;
 
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      display: flex;
+      visibility:visible;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+      bottom: 0;
+      background: var(--card-title-color);
+      width: 100%;
+      height: 70px;
+    }
+  }
 
+  &__subtitle {
+    visibility: hidden;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      @include fonts(null);
+      text-transform: uppercase;
+      color: var(--bgc-color);
+      visibility:visible;
+  display:flex;
+    }
+  }
+}
