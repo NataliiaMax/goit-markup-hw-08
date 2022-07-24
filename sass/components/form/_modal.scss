@@ -2,10 +2,10 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  
+
   & .modal {
-  transform: scale(0.9);
-}
+    transform: scale(0.9);
+  }
 }
 
 .backdrop {
@@ -28,38 +28,35 @@
   width: 450px;
   height: 609px;
   background-color: var(--bgc-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-@media screen and (min-width: 1200px){
-  width: 528px;
-  height: 581px;
-}
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 
-&__btn {
-
+  &__btn {
     @extend %button;
 
     position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: var(--bgc-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--bgc-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     transition: transform var(--animation-fast);
+  }
+
+  &__icon {
+    fill: var(--logo-color);
+  }
+
+  &__btn:hover &__icon,
+  &__btn:focus &__icon {
+    fill: var(--accent-text-color);
+  }
 }
-
-&__icon {
-  fill: var(--logo-color);
-}
-
-&__btn:hover &__icon,
-&__btn:focus &__icon {
-  fill: var(--accent-text-color);
-}
-}
-
-
-

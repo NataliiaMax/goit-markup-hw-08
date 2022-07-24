@@ -1,9 +1,9 @@
 .form-container {
 width: 100%;
 
-@media screen and (min-width: 768px){
-  width: 450px;
-}
+// @media screen and (min-width: 768px){
+//   // width: 450px;
+// }
 
 @media screen and (min-width: 1200px)
   {width: 570px;}
@@ -27,11 +27,11 @@ width: 100%;
   outline: transparent;
   margin-bottom: 20px;
 
-//   @media screen and (min-width: 1200px){
-//   width: 450px;
-// }
+  @media screen and (min-width: 768px){
+  width: 450px;
+}
 
-  @media screen and (min-width: 1200px)
+@media screen and (min-width: 1200px)
   {display: flex;
   align-items: center;
   margin-right: 12px;}

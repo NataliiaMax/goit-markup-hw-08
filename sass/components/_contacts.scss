@@ -1,5 +1,8 @@
 .auth-nav {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+  display: flex;}
 
 &__item {
   transition: color var(--animation-fast);
@@ -42,10 +45,17 @@
     text-decoration: none;
     transition: color var(--animation-fast);
     
+    @media screen and (min-width: 768px) {
+    width: 232px;
+}
+
+    
     &__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
+
+ 
 &__link {
 
   @include fonts(null, null, 1.71, null);

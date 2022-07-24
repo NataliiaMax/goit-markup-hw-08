@@ -19,7 +19,9 @@
       display: flex;
       align-items: baseline;
       margin-bottom: 60px;
-    }
+      margin-left: 76px;
+      margin-right: 89px;
+    }}
 
     &__link {
       display: block;
@@ -32,13 +34,14 @@
   }
     }
   }
-}
+
 
 .adress-container {
   margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     margin-right: 165px;
+    
   }
 
   @media screen and (min-width: 1200px) {

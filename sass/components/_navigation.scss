@@ -1,5 +1,8 @@
 .site-nav {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+  display: flex;}
 
 &__item {
   margin-right: 50px;
