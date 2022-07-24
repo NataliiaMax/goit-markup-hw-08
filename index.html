@@ -163,8 +163,16 @@
         <h2 class="content__caption">Наша команда</h2>
         <ul class="content__list card-set list">
           <li class="content__item card-set__item">
-            <img class="content__img" src="./images/images-index-html/photo1.jpg" alt="Игорь Демьяненко" width="270"
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/team/team-desc-1-1x.webp, " type="image/webp" />
+
+              <source media="(min-width: 1200px)" srcset="./images/team/team-desc-1-1x.jpg, " type="image/jpg" />
+
+
+              <img class="content__img" src="./images/images-index-html/photo1.jpg" alt="Игорь Демьяненко" width="270"
               height="260" />
+            </picture>
+            
             <div class="content__team">
               <h3 class="content__title">Игорь Демьяненко</h3>
               <p class="content__text" lang="en">Product Designer</p>
@@ -489,7 +497,8 @@
       <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link link" href="">Контакты</a></li>
     </ul>
     <ul class="mobile-menu__list-contacts list">
-      <li class="mobile-menu__contacts-item mobile-menu__contacts-item--tel"><a class="mobile-menu__contacts-link link" href="tel:+380961111111">+38 096 111
+      <li class="mobile-menu__contacts-item mobile-menu__contacts-item--tel"><a class="mobile-menu__contacts-link link"
+          href="tel:+380961111111">+38 096 111
           11 11</a></li>
       <li class="mobile-menu__contacts-item"><a class="mobile-menu__contacts-link link"
           href="mailto:info@devstudio.com">info@devstudio.com</a></li>
