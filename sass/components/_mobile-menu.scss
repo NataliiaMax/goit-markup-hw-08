@@ -5,6 +5,8 @@
   border: none;
   width: 40px;
   height: 40px;
+  color: var(--logo-color);
+  
 
   display: flex;
   justify-content: center;
@@ -16,8 +18,13 @@
   }
 }
 
+.mobile-menu__icon{
+  fill: currentColor;
+}
+
 .mobile-menu__burger {
   transition: transform var(--animation-fast);
+
   .mobile-menu__button.is-open & {
     opacity: 0;
   }
@@ -31,6 +38,11 @@
     opacity: 1;
   }
 }
+
+.mobile-menu__button:hover .mobile-menu__icon, 
+.mobile-menu__button:focus .mobile-menu__icon {
+  fill: var(--accent-text-color);
+} 
 
 .mobile-menu {
   position: fixed;

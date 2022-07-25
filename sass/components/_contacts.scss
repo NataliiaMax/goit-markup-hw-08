@@ -2,19 +2,29 @@
   display: none;
 
   @media screen and (min-width: 768px) {
-  display: flex;}
+    display:inline-block;
+margin-left: auto;
+}
+
+   @media screen and (min-width: 1200px){
+      display: flex;
+   }
 
 &__item {
   transition: color var(--animation-fast);
 }
 
 &__item:first-child {
-  margin-right: 50px;
-}
+  margin-bottom: 10px;
+  
+
+  @media screen and (min-width: 1200px){
+    margin-right: 50px;
+}}
 
 &__link {
   @include fonts(500, null, null, 0.02em);
-  @include paddings(32px, null, 32px, null);
+  
 
   display: flex;
   justify-content: center;
@@ -22,7 +32,9 @@
     transition: color var(--animation-fast);
 
   color: var(--primery-text-color);
-  }
+
+  @media screen and (min-width: 1200px){@include paddings(32px, null, 32px, null);
+    }}
 
 
 &__item:hover,
