@@ -35,10 +35,11 @@ width: 100%;
 }
 
 @media screen and (min-width: 1200px)
-  {display: flex;
+  {display: flex; 
+    width: 358px;
   align-items: center;
   margin-right: 12px;}
-  width: 358px;
+ 
 }
 
 &__input-mail:focus {

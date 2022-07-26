@@ -705,6 +705,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 .auth-nav__item {
@@ -806,7 +809,6 @@ body {
   transition: backdrop-color var(--animation-fast);
   outline: transparent;
   margin-bottom: 20px;
-  width: 358px;
 }
 @media screen and (min-width: 768px) {
   .form-field__input-mail {
@@ -818,6 +820,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 358px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -916,6 +919,7 @@ body {
   background-color: var(--backdrop-color);
   -webkit-transition: opasity var(--animation-fast), visibility var(--animation-fast);
   transition: opasity var(--animation-fast), visibility var(--animation-fast);
+  z-index: 1000;
 }
 
 .modal {
@@ -934,7 +938,6 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  z-index: 1001;
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1245,7 +1248,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1000;
+  z-index: 100;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu__button {
@@ -1305,7 +1308,7 @@ body {
   transition: -webkit-transform var(--animation-fast);
   transition: transform var(--animation-fast);
   transition: transform var(--animation-fast), -webkit-transform var(--animation-fast);
-  z-index: 100;
+  z-index: 10;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -1823,16 +1826,16 @@ body {
   border: 1px solid var(--accent-text-color);
 }
 
-.portfolio {
+.card {
   --items: 1;
 }
 @media screen and (min-width: 768px) {
-  .portfolio {
+  .card {
     --items: 2;
   }
 }
 @media screen and (min-width: 1200px) {
-  .portfolio {
+  .card {
     --items: 3;
   }
 }
@@ -1843,6 +1846,9 @@ body {
   padding-left: 24px;
   border: 1px solid var(--border-card-list);
   border-top: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .card__title {
   font-weight: 700;
@@ -1858,7 +1864,14 @@ body {
   letter-spacing: 0.03em;
 }
 .card__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow var(--animation-fast);
   transition: -webkit-box-shadow var(--animation-fast);
   transition: box-shadow var(--animation-fast);

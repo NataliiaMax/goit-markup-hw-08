@@ -1,17 +1,7 @@
 .header {
   border-bottom: 1px solid var(--border-color);
-  // height: 60px;
-  // width: 100%;
-
-  // @media screen and (min-width: 768px) {
-  //   // height: 80px;
-  // }
-
-  //   @media screen and (min-width: 1200px) {}
-  //     //  height: 80px;}
-
-
- &__container {
+  
+   &__container {
 
     @extend %container;
 
