@@ -40,7 +40,15 @@
 
   .mobile-menu__button.is-open & {
     opacity: 1;
+      position: fixed;
+  top: 10px;
+  right: 15px;
   }
+}
+
+ 
+body.off_overflow {
+    overflow: hidden;
 }
 
 .mobile-menu__button:hover .mobile-menu__icon,
