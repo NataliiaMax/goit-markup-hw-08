@@ -4,4 +4,13 @@ body {
     font-family: Roboto, sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
+    
+
+    &.no-scroll {
+		overflow: hidden;
 }
+
+}
+
+ .no-scroll--mobile-menu {
+    overflow: hidden;}
