@@ -39,9 +39,9 @@ width: 100%;
   {display: flex; 
     width: 358px;
   align-items: center;
-  margin-right: 12px;}
- 
-}
+  margin-right: 12px;
+margin-bottom: 0;}
+ }
 
 &__input-mail:focus {
   border-color: var(--accent-text-color);

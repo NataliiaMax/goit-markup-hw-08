@@ -840,6 +840,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 .form-field__input-mail:focus {
@@ -1768,6 +1769,9 @@ body.mobile-menu-open {
             justify-content: space-between;
   }
 }
+.footer__wrapper {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 768px) {
   .footer__wrapper {
     display: -webkit-box;
@@ -1805,6 +1809,11 @@ body.mobile-menu-open {
 .adress-container {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .adress-container {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .adress-container {
     margin-bottom: 0;
@@ -1813,8 +1822,10 @@ body.mobile-menu-open {
   }
 }
 
-.page {
-  margin-bottom: 60px;
+@media screen and (min-width: 768px) {
+  .page {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .page {

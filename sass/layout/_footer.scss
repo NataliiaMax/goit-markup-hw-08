@@ -16,7 +16,8 @@
   }
   }
 
-  &__wrapper {
+  &__wrapper {  margin-bottom: 60px;
+    
     @media screen and (min-width: 768px) {
       display: flex;
       align-items: baseline;
@@ -47,7 +48,7 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
-    // margin-right: 165px;
+    margin-bottom: 0;
 
   }
 
@@ -59,10 +60,10 @@
 }
 
 .page {
-  margin-bottom: 60px;
+
 
   @media screen and (min-width: 768px) {
-    // margin-right: auto;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
