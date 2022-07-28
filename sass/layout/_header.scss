@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);   z-index: 101;
   
    &__container {
 
@@ -8,6 +8,7 @@
 
     display: flex;
     align-items:center;
+ 
   }}
 
   .nav {
