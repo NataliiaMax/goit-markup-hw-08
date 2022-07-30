@@ -1454,6 +1454,7 @@ body.mobile-menu-open {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+  width: 100%;
   margin: 0 auto;
   background-color: var(--background-color);
   background-repeat: no-repeat;
