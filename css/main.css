@@ -983,7 +983,7 @@ body {
 .modal__icon {
   fill: var(--logo-color);
 }
-.modal__btn:hover .modal__icon, .modal__btn:focus .modal__icon {
+.modal__btn:focus .modal__icon {
   fill: var(--accent-text-color);
 }
 
